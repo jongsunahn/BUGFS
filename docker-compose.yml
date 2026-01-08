@@ -1,0 +1,17 @@
+services:
+  bugfs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bugfs
+    restart: unless-stopped
+    ports:
+      - "1026:1026"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - BUGFS_DATA_DIR=/app/data
+      - BUGFS_LOG_DIR=/app/logs

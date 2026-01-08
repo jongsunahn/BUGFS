@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Data and logs (will be mounted as volumes)
+data/
+logs/
+legacy_data/
+pickle/
+
+# Notebooks and experiments
+*.ipynb
+experiments/
+experiments 2/
+get_embedding.ipynb
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Misc
+*.tmp
+*.bak

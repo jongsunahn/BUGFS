@@ -1,0 +1,16 @@
+.env
+**/.venv/
+**/__pycache__/
+.claude/
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+.gitea
+data/
+experiments/
+experiments\ 2/
+logs/
+legacy_data/
+pickles/
+result.md
